@@ -33,19 +33,7 @@ public class UnderstandDI {
 		Date date = d;
 		System.out.println(date);
 	}	
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

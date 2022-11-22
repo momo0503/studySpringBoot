@@ -1,0 +1,9 @@
+package com.study.springboot.bean;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Ex02JavaCodeDiApplication {
+
+	ApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+}
