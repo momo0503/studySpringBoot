@@ -12,6 +12,7 @@ public class ContentValidator implements Validator{
 		return ContentDto.class.isAssignableFrom(arg0); //  검증할 객체의 클래스 타입 정보 
 	}
 
+	//유효성 검증을 위한 코드
 	@Override
 	public void validate(Object obj, Errors errors) {
 		

@@ -33,6 +33,20 @@ public class MyController {
 		
 		return page;
 	}
+	
+	@RequestMapping("/create2")
+	public String insert3(@ModelAttribute("dto") ContentDto contentDto, BindingResult result) {
+		String page = "createPAge";
+		System.out.println(contentDto);
+		
+		ContentValidator validator = new ContentValidator();
+		validator.validate(contentDto, result);
+		if(result.hasErrors()) {
+			page = "createPage";
+		}
+		
+		return page;
+	}
 
 	
 	
